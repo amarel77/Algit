@@ -1,0 +1,28 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+		controllerName="sap.ui.demo.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Comic Quiz">
+		<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="100%">
+		<l:content>
+	     <Label text="Enter FullName" labelFor="name" />
+			<Input id="uname" required="true" width="40%" value="{/Dummy}"/>
+		                
+		<Panel id="containerLayout"
+		   headerText="Instructions"
+		   width="100%">
+		<Text id="text"
+			   renderWhitespace="true"
+			   wrapping="true"
+			   text="1. Total number of questions will be 5. &#xA;2. Option will be given for each question, Choose the right one by selecting Radio Button. &#xA;3. Please enter your name before starting the quiz. &#xA;4. No time limit. &#xA;5. After submitting, the answer cannot be changed. &#xA;6. Result will be displayed at the end. "/>
+	</Panel>
+		</l:content>
+		</l:VerticalLayout>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Start" type="Accept" press="onStart" />
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>

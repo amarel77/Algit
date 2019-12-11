@@ -1,0 +1,32 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+		controllerName="sap.ui.demo.controller.Q4" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Question 4">
+	<headerContent>
+		<Button icon="sap-icon://customer" press="onUser"  ></Button>
+	<Label id="name" labelFor="name"/>
+		</headerContent>
+	<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="100%">
+		<l:content>
+	      <VBox class="sapUiSmallMargin">
+		<Text text="Doctor Strange is the Keeper of which Infinity Stone?" />
+			<RadioButtonGroup columns="4" class="sapUiMediumMarginBottom" id= "RBG">
+				<buttons id = "RB">
+					<RadioButton id="1" text="Soul"/>
+					<RadioButton id="2" text="Time"/>
+					<RadioButton id="3" text="Mind"/>
+					<RadioButton id="4" text="Reality"/>
+				</buttons>
+			</RadioButtonGroup>
+	   </VBox>
+		</l:content>
+		</l:VerticalLayout>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Submit" type="Accept" press="onSubmit" />
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>

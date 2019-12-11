@@ -1,0 +1,93 @@
+{
+  "_version": "1.1.0",
+  "sap.app":{
+  "id":"sap.ui.demo",
+  "dataSources": {
+			
+		}
+  },
+  	
+  "sap.ui5": {
+  	"rootView" : "sap.ui.demo.view.App",
+  	 "resources": {
+  	  "css": [{
+                "uri": "css/style.css"
+            }]
+  },
+		
+	"routing": {
+	  "config": {
+		"routerClass": "sap.m.routing.Router",
+		"viewType": "XML",
+		"viewPath": "sap.ui.demo.view",
+		"controlId": "app",
+		"controlAggregation": "pages",
+		"transition": "slide"
+		
+	  },
+	  "routes": [
+		{
+		  "pattern": "",
+		  "name": "Main",
+		  "target": "Main"
+		},
+		{
+		  "pattern": "Q1",
+		  "name": "Q1",
+		  "target": "Q1"
+		},
+		{
+		  "pattern": "Q2",
+		  "name": "Q2",
+		  "target": "Q2"
+		},
+		{
+		  "pattern": "Q3",
+		  "name": "Q3",
+		  "target": "Q3"
+		},
+		{
+		  "pattern": "Q4",
+		  "name": "Q4",
+		  "target": "Q4"
+		},
+		{
+		  "pattern": "Q5",
+		  "name": "Q5",
+		  "target": "Q5"
+		},
+		{
+		  "pattern": "Result",
+		  "name": "Result",
+		  "target": "Result"
+		}
+		
+	],
+	  "targets": {
+		"Main": {
+		  "viewName": "Main"
+		},
+      "Q1": {
+		  "viewName": "Q1"
+		},	
+	  "Q2": {
+		  "viewName": "Q2"
+		},
+	  "Q3": {
+		  "viewName": "Q3"
+		},
+	  "Q4": {
+		  "viewName": "Q4"
+		},	
+	  "Q5": {
+		  "viewName": "Q5"
+		},
+	  "Result": {
+		  "viewName": "Result"
+		}
+	
+		
+     }
+	}
+  }
+}

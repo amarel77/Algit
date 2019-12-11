@@ -1,0 +1,32 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+		controllerName="sap.ui.demo.controller.Q2" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Question 2">
+	<headerContent>
+		<Button icon="sap-icon://customer" press="onUser"  ></Button>
+	<Label id="name" labelFor="name"/>
+		</headerContent>
+	<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="100%">
+		<l:content>
+	      <VBox class="sapUiSmallMargin">
+		<Text text="Thors Hammer is made from which Star?" />
+			<RadioButtonGroup columns="4" class="sapUiMediumMarginBottom" id= "RBG">
+				<buttons id = "RB">
+					<RadioButton id="1" text="Xandar"/>
+					<RadioButton id="2" text="Titan"/>
+					<RadioButton id="3" text="KnowWhere"/>
+					<RadioButton id="4" text="Nidavellir"/>
+				</buttons>
+			</RadioButtonGroup>
+	   </VBox>
+		</l:content>
+		</l:VerticalLayout>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Submit" type="Accept" press="onSubmit" />
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>

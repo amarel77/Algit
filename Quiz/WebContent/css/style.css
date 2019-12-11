@@ -1,0 +1,38 @@
+.sapMBarContainer {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #204675;
+}
+
+.sapMIBar-CTX .sapMTitle {
+    color: #fbf8f8;
+    text-shadow: 0 0 0.125rem #214674;
+}
+
+html.sap-desktop .sapContrast .sapMIBar.sapMFooter-CTX, html.sap-desktop .sapContrast.sapMIBar.sapMFooter-CTX {
+    background-color: #214674;
+    border-top: 1px solid #214674;
+}
+
+.sapMIBar.sapMHeader-CTX {
+    color: #666666;
+    background-color: #214673;
+    filter: none;
+    background-image: none;
+}
+
+.sapMIBar-CTX .sapMLabel {
+    color: #fafafa;
+    text-shadow: 0 0 1px black;
+}
+
+.sapUiIcon::before {
+    content: attr(data-sap-ui-icon-content);
+    speak: none;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    background-color: #214673;
+    color: #fafafa;
+    text-shadow: 0 0 1px black;
+}

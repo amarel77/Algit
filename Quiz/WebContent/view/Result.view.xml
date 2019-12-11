@@ -1,0 +1,40 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:table="sap.ui.table"
+		controllerName="sap.ui.demo.controller.Result" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Result">
+		<content>
+	    <Panel id="containerLayout"
+		   headerText="Instructions"
+		   width="100%">
+		<Text id="text"
+			   renderWhitespace="true"
+			   wrapping="true"
+			   text= " Congratulations! you have just finished your test. Please Checkout your RESULT Below. "/>
+			   </Panel>
+		<Text text= "Result!" />
+		
+	  	<table:Table id="resTab" rows="{table>/}" itemPress="HandleList"
+				 includeItemInSelection="true">
+		<table:columns>
+					<table:Column width="25%">
+						<Label text="Name" />
+						<table:template>
+							<Text text="{table>name}"></Text>
+						</table:template>
+					</table:Column>
+					<table:Column width="25%">
+						<Label text="Score" />
+						<table:template>
+							<Text text="{table>result}"></Text>
+						</table:template>
+					</table:Column>
+					</table:columns>
+					</table:Table> 
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="New Test" type="Accept" press="onNew" />
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>
